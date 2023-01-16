@@ -1,12 +1,12 @@
-import { Box, Grid, Rating, Typography } from "@mui/material";
+import { Box, Rating, Typography } from "@mui/material";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import React from "react";
 
 
 const Items = ({name, image, price}) => {
   return (
-        <Grid item lg={3} md={4} sm={12} backgroundColor="white" padding="10px 20px 10px 20px" >
-          <img src={image} alt="/" width="300px" />
+        <Box  backgroundColor="white" padding="10px 20px 10px 20px" >
+          <img src={image} alt="/" width="250px" />
           <Typography variant="h3" fontSize={14} fontWeight={400}>
             {name}
           </Typography>
@@ -27,7 +27,7 @@ const Items = ({name, image, price}) => {
             </Typography>
             <AddCircleIcon />
           </Box>
-        </Grid>
+        </Box>
   );
 };
 
